@@ -18,6 +18,15 @@ the whole concept of this is ease of use and speed.
 
 once i am happy this works as i want, i will make a really simple front end to show everything that is logged, with the ability to export. 
 
+### things to do 
+
+[] track un-completed complaints (no end date)
+
+
+### nice to have ideas
+
+[] alerting of un-completed complaints
+
 -- 
 
 remember, i am a noob. 
