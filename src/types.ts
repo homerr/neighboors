@@ -56,4 +56,45 @@ export interface CreateComplaintRequest {
 // update a complaint interface
 export interface UpdateComplaintRequest {
     date?: string;
-    time
+    time_start?: string;
+    time_end?: string;
+    description_of_nusisance?: string;
+    how_affects_you?: string;
+    type_of_nuisance?: NusianceType;
+    location?: string;
+    private_notes?: string;
+    status?: ComplaintStatus;
+    authority_reference?: string;
+}
+
+// exported info for la
+export interface ComplaintExport {
+    date: string;
+    time_start: string;
+    time_end?: string;
+    description_of_nusisance: string;
+    how_affects_you: string;
+    location?: string;
+}
+
+// some constants for life
+export const NUISANCE_TYPES: NusianceType[] = [
+    'noise_music',
+    'noise_dogs',
+    'noise_construction',
+    'noise_appliances',
+    'noise_ventilation',
+    'noise_cars',
+    'noise_shouting',
+    'smell_fire',
+    'smell_rubbish',
+    'light',
+    'smoke',
+    'other'
+]
+
+export const COMPLAINT_STATUSES: ComplaintStatus[] = [
+    'open',
+    'submitted',
+    'closed'
+];
